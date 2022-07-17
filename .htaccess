@@ -1,0 +1,4 @@
+RewriteEngine On
+# AUTH
+RewriteRule ajouter-utilisateur$ ajouter-utilisateur.php [L]
+RewriteRule ajouter-formation$ ajouter-formation.php [L]

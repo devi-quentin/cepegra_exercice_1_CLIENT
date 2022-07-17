@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap')
+@import ./inc/_variables
+@import ./inc/_nav
+@import ./inc/_form
+
+* 
+    padding: 0
+    margin: 0
+
+html
+    font-family: Poppins
+    color: $color_text
+
+a
+    text-decoration: none
+    color: inherit
+
+h1
+    margin-bottom: 1rem
+
+%dev
+    border: 1px dashed red
+
+body
+    display: flex
+    flex-direction: column
+    height: 100vh
+
+header
+    background-color: #EE0
+    padding: 1rem
+
+main
+    display: flex
+    height: 100%
+    gap: 2rem
+    padding: 1rem
+
+    section#page
+        border-left: 1px solid #ddd
+        padding-left: 1rem
+        width: 100%
+
+footer
+    display: flex
+    padding: 1rem
+    justify-content: center

@@ -1,0 +1,33 @@
+nav        
+    width: 25rem
+
+    h3
+        font-size: 1rem
+        font-weight: normal
+        margin-bottom: 1rem
+
+    #fonction_name
+        font-weight: bold
+
+    ul
+        display: flex
+        flex-direction: column
+        border-left: 1px solid #ddd
+        gap: 1rem
+
+        li 
+            list-style-type: none
+            color: lighten($color_text, 20)
+            padding: 0.3rem
+            padding-left: 1rem
+            border-left: 1px solid transparent
+            margin-left: -1px
+            transition: all .2s
+
+            &.active
+                font-weight: bold                    
+                border-color: $color_active             
+                color: $color_active
+
+            &:hover
+                border-color: $color_active
