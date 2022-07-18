@@ -12,7 +12,7 @@
     <main>
         <?php include 'includes/nav.php'; ?>
         <section id="page">      
-            <h1>Ajouter une formation</h1>
+            <h1>Planifier une formation</h1>
             <form action="" method="POST">                
                 <div>
                     <label for="metier">Métier</label>
@@ -53,6 +53,6 @@
         </section>
     </main>
     <?php include 'includes/footer.php'; ?>
-    <script src="script/main.js"></script>
+    <script src="script/verif-connected.js"></script>
 </body>
 </html>
