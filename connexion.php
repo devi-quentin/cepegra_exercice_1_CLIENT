@@ -17,7 +17,7 @@
                 <div class="form_group">
                     <div>
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="connexionEmail" placeholder="" value="dokk.bernard@gmail.com" required>
+                        <input type="email" name="email" id="connexionEmail" placeholder="" value="secretaire@gmail.com" required>
                     </div>
 
                     <div>

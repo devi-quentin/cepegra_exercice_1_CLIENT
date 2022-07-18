@@ -13,13 +13,11 @@
         <?php include 'includes/nav.php'; ?>
         <section id="page">      
             <h1>Planifier une formation</h1>
-            <form action="" method="POST">                
+            <form action="" method="POST" id="addFormationForm">                
                 <div>
                     <label for="metier">Métier</label>
-                    <select name="metier" id="metier">
-                        <option value=null>--</option>
-                        <option value="1">Métier 1</option>
-                        <option value="2">Métier 2</option>
+                    <select name="metier" id="metier" required>
+                        <option value="">--</option>
                     </select>
                 </div>
 
@@ -40,9 +38,8 @@
 
                 <div>
                     <label for="lieu">Lieu</label>
-                    <select name="lieu" id="lieu">
-                        <option value="1">Lieu 1</option>
-                        <option value="2">Lieu 2</option>
+                    <select name="lieu" id="lieu" required>
+                        <option value="">--</option>
                     </select>
                 </div>
 
@@ -50,9 +47,11 @@
                     <button>Planifier la formation</button>
                 </div>
             </form>
+            <section id="msgForUser"></section>
         </section>
     </main>
     <?php include 'includes/footer.php'; ?>
     <script src="script/verif-connected.js"></script>
+    <script src="script/ajouter-formation.js"></script>
 </body>
 </html>

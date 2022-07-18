@@ -29,5 +29,10 @@ nav
                 border-color: $color_active             
                 color: $color_active
 
+            &.inactive                
+                color: lighten($color_text, 60)
+                cursor: default
+                pointer-events: none
+
             &:hover
                 border-color: $color_active
