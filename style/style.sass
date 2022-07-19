@@ -3,10 +3,12 @@
 @import ./inc/_nav
 @import ./inc/_form
 @import ./inc/_table
+@import ./inc/_searchResults
 
 * 
     padding: 0
     margin: 0
+    box-sizing: border-box
 
 html
     font-family: Poppins
@@ -15,6 +17,22 @@ html
 a
     text-decoration: none
     color: inherit
+    position: relative
+
+    &.btn::after
+        content: ""
+        position: absolute
+        height: .3rem
+        width: 100%
+        background-color: #FF0
+        bottom: .2rem
+        left: 0px
+        z-index: -1
+        transition: all 0.2s
+
+    &.btn:hover::after
+        content: ""
+        height: 1rem
 
 h1
     margin-bottom: 1rem
@@ -32,7 +50,8 @@ section.msgForUser
 body
     display: flex
     flex-direction: column
-    height: 100vh
+    min-height: 100vh
+    max-height: 100%
 
 header
     background-color: #EE0
@@ -43,11 +62,13 @@ main
     height: 100%
     gap: 2rem
     padding: 1rem
+    flex-grow: 1
 
     section#page
         border-left: 1px solid #ddd
         padding-left: 1rem
         width: 100%
+        height: 100%
 
 footer
     display: flex

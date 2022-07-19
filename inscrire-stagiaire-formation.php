@@ -22,16 +22,17 @@
                 </div>
 
                 <div>
-                    <label for="searchStagiaires">Chercher un stagiaire</label>
+                    <label for="searchStagiaires">Ajouter un stagiaire</label>
                     <input type="search" name="searchStagiaires" id="searchStagiaires" placeholder="nom, prénom, email">
+                    <div id="searchResults" class="searchResults"></div>
                 </div>
 
-                <div id="tableUsersList">
+                <div id="listInscriptions">
                     
                 </div>
 
                 <div>
-                    <button disabled>Inscrire le(s) stagiaire(s)</button>
+                    <button>Mettre à jour la liste des stagiaires</button>
                 </div>
             </form>
             <section id="msgForUser"></section>

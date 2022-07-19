@@ -42,6 +42,8 @@ connexionForm.addEventListener("submit", (e) => {
         case 200:
           localStorage.setItem("token", response.token);
           localStorage.setItem("function", response.function);
+          localStorage.setItem("username", response.username);
+          localStorage.setItem("userid", response.userid);
           if (response.function == 1) window.location.href = "ajouter-utilisateur"
           if (response.function == 2) window.location.href = "evaluation"
           break;

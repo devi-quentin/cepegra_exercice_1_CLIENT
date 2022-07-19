@@ -1,6 +1,6 @@
 const msgForUser = document.querySelector("#msgForUser");
 const addUserForm = document.querySelector("#addUserForm");
-const user_name = document.querySelector("#name");
+const username = document.querySelector("#name");
 const firstname = document.querySelector("#firstname");
 const password = document.querySelector("#password");
 const password_verif = document.querySelector("#password_verif");
@@ -13,7 +13,7 @@ addUserForm.addEventListener("submit", (e) => {
   if (password.value === password_verif.value) {
     let data = {
       token: localStorage.token,
-      name: user_name.value,
+      name: username.value,
       firstname: firstname.value,
       password: password.value,
       email: email.value,

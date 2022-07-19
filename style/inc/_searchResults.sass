@@ -1,0 +1,18 @@
+.searchResults
+    display: none
+    border: 1px solid #ccc
+    border-radius: 1rem
+    position: absolute
+    left: 12rem
+    background-color: #fff
+    z-index: 2
+    box-shadow: .1rem .1rem 1rem 0 #00000023
+    max-height: 400px
+    overflow-y: auto
+    overflow-x: hidden
+
+    &:hover
+        display: block
+
+input#searchStagiaires:focus + .searchResults
+    display: block 

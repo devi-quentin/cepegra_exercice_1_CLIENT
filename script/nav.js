@@ -1,6 +1,7 @@
 const menuItems = document.querySelectorAll("[data-connected]");
 const logoutItem = document.querySelector("#logoutItem");
 const fonction_name = document.querySelector("#fonction_name");
+const user_name = document.querySelector("#user_name");
 
 // BOUTON DECONNEXION
 logoutItem.addEventListener("click", (e) => {
@@ -30,7 +31,8 @@ if (localStorage.token != undefined) {
   });
 }
 
-// Affichage de la fonction de l'utilisateur
+// Affichage du nom et de la fonction de l'utilisateur
+user_name.innerHTML = localStorage.username
 fonction_name.innerHTML = (localStorage.function == 1) ? "Secrétaire" : "Stagiaire"
 
 // Add active class to item menu
