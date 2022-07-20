@@ -33,7 +33,7 @@ if (localStorage.token != undefined) {
 
 // Affichage du nom et de la fonction de l'utilisateur
 user_name.innerHTML = localStorage.username
-fonction_name.innerHTML = (localStorage.function == 1) ? "Secrétaire" : "Stagiaire"
+fonction_name.innerHTML = (localStorage.function == 1) ? "(Secrétaire)" : "(Stagiaire)"
 
 // Add active class to item menu
 menuItems.forEach(item => {

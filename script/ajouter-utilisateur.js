@@ -17,7 +17,7 @@ addUserForm.addEventListener("submit", (e) => {
       firstname: firstname.value,
       password: password.value,
       email: email.value,
-      id_fonction: document.querySelector('input[name="id_function"]:checked')
+      id_fonction: document.querySelector('#id_function')
         .value,
     };
 

@@ -17,11 +17,11 @@
             <h1>Ajouter un utilisateur</h1>
             <form action="" method="POST" id="addUserForm">
                 <div>
-                    <label for="function_stagiaire">Stagiaire</label>
-                    <input type="radio" name="id_function" id="function_stagiaire" value="2" placeholder="" required>
-
-                    <label for="function_secretaire">Secrétaire</label>
-                    <input type="radio" name="id_function" id="function_secretaire" value="1" placeholder="" required>
+                    <label for="">Fonction</label>
+                    <select name="id_function" id="id_function">
+                        <option value="2">Stagiaire</option>
+                        <option value="1">Secrétaire</option>
+                    </select>
                 </div>
 
                 <div class="form_group">

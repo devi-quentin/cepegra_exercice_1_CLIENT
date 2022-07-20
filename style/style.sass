@@ -13,6 +13,10 @@
 html
     font-family: Poppins
     color: $color_text
+    accent-color: $color_active
+
+#user_name
+    font-weight: bold
 
 a
     text-decoration: none
@@ -24,10 +28,11 @@ a
         position: absolute
         height: .3rem
         width: 100%
-        background-color: #FF0
+        background-color: $color_active
         bottom: .2rem
         left: 0px
         z-index: -1
+        filter: opacity(50%)
         transition: all 0.2s
 
     &.btn:hover::after
@@ -35,10 +40,10 @@ a
         height: 1rem
 
 h1
-    margin-bottom: 1rem
+    margin-bottom: 2rem
 
 %dev
-    border: 1px dashed red
+    border: 3px dashed #F007
 
 section.msgForUser
     padding: 1rem
@@ -52,25 +57,52 @@ body
     flex-direction: column
     min-height: 100vh
     max-height: 100%
+    // background-color: #f3f3f3
 
 header
-    background-color: #EE0
-    padding: 1rem
+    padding: 2rem
+    width: 100vw
+    background-color: #396c93
+    color: white
+
+    div
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: $MAXWIDTH
+        width: 100%
+        margin: 0 auto
+
+    h1, h2, h3
+        padding: 0
+        margin: 0
+    
+    h3
+        font-weight: normal
 
 main
     display: flex
     height: 100%
     gap: 2rem
-    padding: 1rem
+    padding: 1rem 2rem
     flex-grow: 1
+    max-width: $MAXWIDTH
+    width: 100%
+    margin: 0 auto
+    background-color: #fff
 
     section#page
         border-left: 1px solid #ddd
-        padding-left: 1rem
+        padding-left: 3rem
         width: 100%
         height: 100%
+        // @extend %dev
 
 footer
     display: flex
     padding: 1rem
     justify-content: center
+    max-width: $MAXWIDTH
+    width: 100%
+    margin: 0 auto
+    background-color: #fff
