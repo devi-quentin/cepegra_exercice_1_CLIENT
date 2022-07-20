@@ -27,11 +27,11 @@ const generateRadar = data => {
     labels: radarLabels,
     datasets: [
         {
-        label: "GE",
-        backgroundColor: "rgba(255, 99, 132, .2)",
-        borderColor: "rgb(255, 99, 132)",
-        data: dataForRadar,
-        fill: true,
+            label: "GE",
+            backgroundColor: "rgba(255, 99, 132, .2)",
+            borderColor: "rgb(255, 99, 132)",
+            data: dataForRadar,
+            fill: true,
         },
     ],
     };
