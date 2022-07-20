@@ -13,7 +13,7 @@ fetch(urlApi + "check-connected", {
 .then((response) => response.json())
 .then((response) => {
     if (response.code != 200) {
-        window.location.href = "connexion"
+        window.location.href = "./"
     }
 })
 .catch((error) => console.log(error));

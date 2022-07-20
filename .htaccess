@@ -5,4 +5,4 @@ RewriteRule ajouter-formation$ ajouter-formation.php [L]
 RewriteRule evaluation$ evaluation.php [L]
 RewriteRule inscrire-stagiaire-formation$ inscrire-stagiaire-formation.php [L]
 
-RewriteRule connexion$ connexion.php [L]
+# RewriteRule connexion$ connexion.php [L]

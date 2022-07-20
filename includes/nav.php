@@ -10,6 +10,7 @@
         
         <!-- STAGIAIRE -->
         <li data-page="evaluation" data-connected="stagiaire"><a href="evaluation">S'auto évaluer (GE)</a></li>
+        <li data-page="mes-ge" data-connected="stagiaire"><a href="mes-ge">Voir mes GE</a></li>
 
         <li data-connected ><a href="#" id="logoutItem">Se déconnecter</a></li>
     </ul>
