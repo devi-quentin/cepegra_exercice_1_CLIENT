@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.min.css">
-    <title>Exercice 1</title>
+    <title>Planifier formation</title>
 </head>
 <body>
     <?php include 'includes/header.php'; ?>

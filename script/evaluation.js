@@ -73,7 +73,7 @@ formation_id.addEventListener("change", () => {
                 iOption++
                 document.querySelector('#theme'+e.id_theme).innerHTML += `
                     <p class="reponse">
-                        <input type="radio" name="theme${e.id_theme}_reponse" id="theme${e.id_theme}_reponse${e.id}" value="${e.id}" required>
+                        <input type="radio" name="theme${e.id_theme}_reponse" id="theme${e.id_theme}_reponse${e.id}" value="${e.value}" data-id="${e.id}" required>
                         <label for="theme${e.id_theme}_reponse${e.id}">${e.content}</label>
 
                         
@@ -94,17 +94,23 @@ formGE.addEventListener('submit', e => {
         id_user: localStorage.userid,
         id_metier: document.querySelector("#id_metier").value,
         id_theme_1: document.querySelector("#idTheme_1").value,
-        id_option_1: document.querySelector("[name='theme1_reponse']:checked").value,
+        id_option_1: document.querySelector("[name='theme1_reponse']:checked").dataset.id,
         id_theme_2: document.querySelector("#idTheme_2").value,
-        id_option_2: document.querySelector("[name='theme2_reponse']:checked").value,
+        id_option_2: document.querySelector("[name='theme2_reponse']:checked").dataset.id,
         id_theme_3: document.querySelector("#idTheme_3").value,
-        id_option_3: document.querySelector("[name='theme3_reponse']:checked").value,
+        id_option_3: document.querySelector("[name='theme3_reponse']:checked").dataset.id,
         id_theme_4: document.querySelector("#idTheme_4").value,
-        id_option_4: document.querySelector("[name='theme4_reponse']:checked").value,
+        id_option_4: document.querySelector("[name='theme4_reponse']:checked").dataset.id,
         id_theme_5: document.querySelector("#idTheme_5").value,
-        id_option_5: document.querySelector("[name='theme5_reponse']:checked").value,
+        id_option_5: document.querySelector("[name='theme5_reponse']:checked").dataset.id,
         id_theme_6: document.querySelector("#idTheme_6").value,
-        id_option_6: document.querySelector("[name='theme6_reponse']:checked").value
+        id_option_6: document.querySelector("[name='theme6_reponse']:checked").dataset.id,
+        value_1: document.querySelector("[name='theme1_reponse']:checked").value,
+        value_2: document.querySelector("[name='theme2_reponse']:checked").value,
+        value_3: document.querySelector("[name='theme3_reponse']:checked").value,
+        value_4: document.querySelector("[name='theme4_reponse']:checked").value,
+        value_5: document.querySelector("[name='theme5_reponse']:checked").value,
+        value_6: document.querySelector("[name='theme6_reponse']:checked").value
     }
 
     fetch(urlApi + "ge", {

@@ -3,6 +3,7 @@ RewriteEngine On
 RewriteRule ajouter-utilisateur$ ajouter-utilisateur.php [L]
 RewriteRule ajouter-formation$ ajouter-formation.php [L]
 RewriteRule evaluation$ evaluation.php [L]
+RewriteRule mes-ge$ mes-ge.php [L]
 RewriteRule inscrire-stagiaire-formation$ inscrire-stagiaire-formation.php [L]
 
 # RewriteRule connexion$ connexion.php [L]

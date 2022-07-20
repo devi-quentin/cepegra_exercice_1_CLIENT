@@ -12,6 +12,7 @@ fetch(urlApi + "check-connected", {
   })
 .then((response) => response.json())
 .then((response) => {
+  console.log(response)
     if (response.code != 200) {
         window.location.href = "./"
     }

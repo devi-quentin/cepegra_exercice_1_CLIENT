@@ -177,6 +177,7 @@ addFormationForm.addEventListener("submit", (e) => {
       console.log(response);
       if (response.code == 200) {
         addFormationForm.reset()
+        location.reload()
       }
       msgForUser.innerHTML = response.message
     })
